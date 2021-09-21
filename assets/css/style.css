@@ -170,7 +170,7 @@ h1, h2, h3 {
 #slider {
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider-band.jpg') center top /cover no-repeat;
+    background: url('/workspace/assets/img/slider-band.jpg') center top /cover no-repeat;
     position: relative;
 }
 #slider .slider-content {
