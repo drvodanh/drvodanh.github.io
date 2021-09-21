@@ -402,6 +402,7 @@ h1, h2, h3 {
     }
     .submit-btn {
         padding: 16px 16px;
+        -webkit-appearance: none;
     }
     #footer .footer-social i[class*="ti-"] {
         margin: 0 12px;
