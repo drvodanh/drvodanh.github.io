@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+.text-white {
+    color: #fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.full-width {
+    width: 100%;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 50%
+}
+.col-third {
+    width: calc(100% /3);
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.mtb-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.mb-16 {
+    margin-bottom: 16px !important;
+}
+.ml-16 {
+    margin-left: 16px !important;
+}
+.ml-8 {
+    margin-left: 8px !important;
+}
+.mr-8 {
+    margin-right: 8px !important;
+}
+.mb-32 {
+    margin-bottom: 32px !important;
+}
+.ptb-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+.p-16 {
+    padding: 16px !important;
+}
+.btn-btn {
+    border: none;
+    font-size: 15px;
+    background: #000;
+    color: #fff;
+}
+.btn-btn:hover {
+    color: #000;
+    background: #ccc;
+    cursor: pointer;
+}
+.hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important;
+    cursor: pointer !important;
+}
+#main {
+    overflow: hidden;
+}
+#header {
+    height: 46px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#header > #nav,
+#nav > li {
+    display: inline-block;
+}
+#nav, .subnav, .tick-box {
+    list-style: none;
+}
+#nav li {
+    position: relative;
+}
+#nav > li > a {
+    text-transform: uppercase;
+}
+#nav li a {
+    color: #fff;
+    padding: 0 24px;
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+}
+#nav .down-btn {
+    font-size: 12px;
+}
+#nav > li:hover > a, .subnav li:hover a, #header .mo-menu:hover {
+    color: #000 !important;
+    background: #ccc !important;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    background: #fff;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    padding: 0 16px;
+}
+#header .search-btn, #header .mo-menu {
+    display: block;
+    float: right;
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+}
+#header .mo-menu {
+    display: none;
+}
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/workspace/assets/img/slider-band.jpg') center top /cover no-repeat;
+    position: relative;
+}
+#slider .slider-content {
+    position: absolute;
+    padding: 0 16px;
+    bottom: 32px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#slider h3{
+    font-size: 24px;
+}
+#content .content-container {
+    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#content .content-body {
+    font-style: italic;
+    opacity: .5;
+}
+#content .content-about {
+    text-align: justify;
+}
+#content .img-band {
+    width: 154px;
+}
+#content .tour-date {
+    background: #000;
+}
+.tour-date .tick-box {
+    background: #fff;
+    text-align: left;
+    margin-top: 42px;
+    color: #757575;
+}
+.tour-date .tick-box li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tour-date .sold-out {
+    padding: 2px 8px;
+    background: #f44336;
+    color: #fff;
+}
+.tour-date .tick-quantity {
+    width: 24px;
+    height: 24px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -1px;
+}
+.place {
+    padding: 32px 0;
+}
+.place-img {
+    width: 285px;
+    height: 183px;
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: .7;
+}
+.place-item {
+    padding: 0 8px;
+}
+.place-container {
+    background: #fff;
+    text-align: left;
+    padding: 16px;
+}
+.place-container h3 {
+    margin-top: 0;
+}
+.buy-tickets {
+    padding: 11px 16px;
+}
+.place-time {
+    opacity: .5;
+}
+
+#content .contact-section {
+    font-size: 18px;
+}
+#content .contact-section i[class*="ti-"] {
+    width: 32px;
+    display: inline-block;
+}
+#content .contact-section a {
+    color: blue;
+    opacity: .6;
+}
+#content .contact-section a:hover {
+    opacity: 1;
+}
+.form-control {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.submit-btn {
+    padding: 12px 16px;
+}
+.img-map {
+    width: 100%;
+    filter: grayscale(50%);
+    display: block;
+}
+#footer {
+    padding: 64px 16px;
+}
+.footer-social, .footer-social a {
+    color: #636465;
+}
+#footer  .footer-social i[class*="ti-"] {
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+#footer  .footer-social i[class*="ti-"]:hover {
+    opacity: .5;
+}
+.modal {
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open {
+    display: flex;
+}
+.modal-container {
+    min-height: 200px;
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    position: relative;
+    transform: translateY(-100px);
+    animation: modal-show ease .4s;
+    scroll-behavior: smooth;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 18px;
+}
+.modal-heading {
+    background: #009688;
+    padding: 42px 0;
+}
+.modal-heading header {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+.modal-input {
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 8px 0 32px
+}
+.pay-btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 16px 0px;
+    background: #009688;
+    color: #fff;
+    border: none;
+}
+.help {
+    float: right;
+    margin: 48px 0 28px;
+}
+.help a {
+    color: #2196F3;
+}
+
+@keyframes modal-show {
+    from {
+        transform: translateY(-400px);
+        opacity: .6;
+    }
+    to {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+}
+@media (max-width: 63.9375em) {
+    .s-full-width
+    {
+        width: 100%;
+    }
+    .s-mt-32 {
+        margin-top: 32px !important;
+    }
+    .s-ptb-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    }
+    #nav .subnav a {
+        padding: 5px 32px;
+    }
+    #content .buy-tickets {
+    padding: 16px 16px;
+    }
+    .form-control {
+        padding: 15px;
+    }
+    .s-contact-section {
+        line-height: 2;
+    }
+    .submit-btn {
+        padding: 16px 16px;
+    }
+    #footer .footer-social i[class*="ti-"] {
+        margin: 0 12px;
+        padding: 12px 4px;
+    }
+}
+@media (max-width: 46.25em){
+    .col-half,
+    .col-third {
+        width: 100%;
+    }
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #nav{
+        display: block !important;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child {
+        display: inline-block;
+    }
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header .mo-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    #nav .subnav {
+        position: inherit;
+        background: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+    }
+    #slider .slider-content {
+        display: none;
+    }
+    #content .img-band {
+    width: 60%;
+    }
+    #content .place-img {
+        height: auto;
+    }
+    .s-contact-section {
+        margin: 12px 0;
+    }
+    .contact-section {
+        margin-bottom: 16px;
+    }
+}
